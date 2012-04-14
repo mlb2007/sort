@@ -12,13 +12,13 @@ using namespace std;
 
 static int myrand(int low, int high)
 {
-    int num = low + rand() % (high - low);
-
-    int sgn = rand()% 2;
-    if(sgn)
-        return num;
-    else
-        return -num;
+  int num = low + rand() % (high - low);
+  
+  int sgn = rand()% 2;
+  if(sgn)
+    return num;
+  else
+    return -num;
 }
 
 static void genrandvec(vector<int>& inp, size_t sz)
